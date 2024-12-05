@@ -1,15 +1,13 @@
 #pragma once
 
-#include "Horse.h"             // Подключаем класс Horse
-#include "Groom.h"             // Подключаем класс Groom
-#include "InventoryItem.h"     // Подключаем класс InventoryItem
+#include "Horse.h"             
+#include "Groom.h"             
+#include "InventoryItem.h"     
 
-// Определяем максимальное количество объектов в конюшне
 const int maxHorses = 10;
 const int maxEmployees = 10;
 const int maxInventoryItems = 10;
 
-// Класс Stable (Конюшня)
 class Stable {
 public:
     Stable();
@@ -21,11 +19,11 @@ public:
     void displayAllInfo() const;
 
 private:
-    Horse horses[maxHorses];                     // Статический массив лошадей
-    Groom employees[maxEmployees];               // Статический массив сотрудников
-    InventoryItem inventory[maxInventoryItems]; // Статический массив элементов инвентаря
+    Horse horses[maxHorses];                     
+    Groom employees[maxEmployees];               
+    InventoryItem inventory[maxInventoryItems]; 
     
-    int horseCount;          // Текущая количество лошадей
-    int employeeCount;       // Текущая количество сотрудников
-    int inventoryCount;      // Текущая количество элементов инвентаря
+    int horseCount;          
+    int employeeCount;       
+    int inventoryCount;      
 };
