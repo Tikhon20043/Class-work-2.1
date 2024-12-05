@@ -1,7 +1,7 @@
 #include <iostream>
-#include "Stable.h"         // Подключаем класс Stable
+#include "Stable.h"         
 
-// Основная функция программы демонстрирует работу системы классов.
+
 int main() {
     
     Stable stable;
@@ -14,7 +14,7 @@ int main() {
     stable.addInventoryItem(InventoryItem("Сено", 100));
     stable.addInventoryItem(InventoryItem("Седло", 5)); 
 
-    stable.displayAllInfo(); // Отображаем всю информацию о конюшне
+    stable.displayAllInfo(); 
 
-    return 0; // Завершаем программу
+    return 0; 
 }
