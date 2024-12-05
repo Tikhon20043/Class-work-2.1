@@ -1,15 +1,15 @@
 #pragma once
 
-#include <string> // Подключаем библиотеку для работы со строками
+#include <string> 
 
-// Абстрактный класс Animal
+
 class Animal {
 public:
     Animal(const std::string& name, int age) : name(name), age(age) {}
-    virtual void displayInfo() const = 0; // Чисто виртуальный метод
-    virtual ~Animal() = default; // Виртуальный деструктор
+    virtual void displayInfo() const = 0; 
+    virtual ~Animal() = default; 
 
 protected:
-    std::string name; // Имя животного
-    int age;          // Возраст животного
+    std::string name; 
+    int age;         
 };
